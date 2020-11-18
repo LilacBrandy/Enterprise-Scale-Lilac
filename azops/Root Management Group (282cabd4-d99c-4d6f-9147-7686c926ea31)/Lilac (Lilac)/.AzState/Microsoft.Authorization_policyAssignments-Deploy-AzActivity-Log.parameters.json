@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "3c04a3d5-ae0b-41ec-a61e-c6fe931ce199",
+          "tenantId": "282cabd4-d99c-4d6f-9147-7686c926ea31",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-AzActivity-Log",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "Properties": {
+          "Description": "Deploy-AzActivity-Log",
+          "DisplayName": "Deploy-AzActivity-Log",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86/resourcegroups/lilac-mgmt/providers/microsoft.operationalinsights/workspaces/lilac-la-1e567987-6879-4552-911b-1e4986148c86"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ActivityLog",
+          "Scope": "/providers/Microsoft.Management/managementGroups/Lilac"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "ResourceName": "Deploy-AzActivity-Log",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

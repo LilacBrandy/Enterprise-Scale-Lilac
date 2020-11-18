@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "6ccf209a-5ae3-4d94-9cbc-b29864414488",
+          "tenantId": "282cabd4-d99c-4d6f-9147-7686c926ea31",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-Resource-Diag",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+        "Properties": {
+          "Description": "Deploy-Resource-Diag",
+          "DisplayName": "Deploy-Resource-Diag",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86/resourcegroups/lilac-mgmt/providers/microsoft.operationalinsights/workspaces/lilac-la-1e567987-6879-4552-911b-1e4986148c86"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/Lilac"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+        "ResourceName": "Deploy-Resource-Diag",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
