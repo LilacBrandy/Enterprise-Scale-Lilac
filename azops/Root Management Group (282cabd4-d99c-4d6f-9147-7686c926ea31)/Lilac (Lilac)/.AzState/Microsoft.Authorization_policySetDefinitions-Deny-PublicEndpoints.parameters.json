@@ -1,0 +1,64 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Deny-PublicEndpoints",
+        "PolicySetDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicEndpoints",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Deny-Public-Endpoints-for-PaaS-Services",
+          "Parameters": {},
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "8072801113726587494",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-CosmosDB",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "15931783025523535096",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-MariaDB",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "17830577345273868305",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-MySQL",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "1781215536626813040",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-PostgreSql",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "15594748626041640185",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-KeyVault",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "9430970473435352709",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-Sql",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "8356736585181777149",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-Storage",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "15685956580733950240",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-Aks",
+              "parameters": {}
+            }
+          ]
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicEndpoints",
+        "ResourceName": "Deny-PublicEndpoints",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "SubscriptionId": null
+      }
+    }
+  }
+}

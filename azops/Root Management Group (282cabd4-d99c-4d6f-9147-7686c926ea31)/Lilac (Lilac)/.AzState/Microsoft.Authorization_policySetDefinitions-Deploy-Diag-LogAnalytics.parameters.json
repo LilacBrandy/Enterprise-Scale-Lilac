@@ -1,0 +1,483 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Deploy-Diag-LogAnalytics",
+        "PolicySetDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+        "Properties": {
+          "Description": "This initiative configures application Azure resources to forward diagnostic logs and metrics to an Azure Log Analytics workspace.",
+          "DisplayName": "Deploy-Diag-LogAnalytics",
+          "Parameters": {
+            "logAnalytics": {
+              "metadata": {
+                "description": "Select the Log Analytics workspace from dropdown list",
+                "displayName": "Log Analytics workspace",
+                "strongType": "omsWorkspace"
+              },
+              "type": "String"
+            }
+          },
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "3567740041399322086",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-NIC",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9815243047491253892",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-PowerBIEmbedded",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "16444615500339983353",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-StreamAnalytics",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1765166309420409181",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ExpressRoute",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17209936418309075065",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ACI",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17327158269597945143",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ACR",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "10343341819038055624",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VirtualNetwork",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "11537907480154351733",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VM",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9301217180399308438",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VMSS",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "2546654851142338314",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VNetGW",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "41862334083164826",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-AKS",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "6817458591836958538",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Website",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "6400402001962933255",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-AnalysisService",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1912777570737742975",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-EventGridTopic",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "10944524539865520511",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-EventGridSub",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9068519666571992996",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-HDInsight",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "3193240448009806439",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-RedisCache",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14802736788538853211",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Relay",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "8814248394590064440",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SignalR",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "5160253813404913144",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-TrafficManager",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14250378331807314559",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-WebServerFarm",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9685029529522294121",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SQLMI",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12714560285848626040",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Firewall",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "16666288543318758354",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-DataFactory",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "18130765399563945074",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-CosmosDB",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17170580157169907101",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-CDNEndpoints",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "6064500951278665757",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-AA",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "15287520264890760818",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-PublicIP",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "7497335914983282369",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-LoadBalancer",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "5586604831351762276",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-NetworkSecurityGroups",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "3515807975773278704",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-KeyVault",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "7620082553955737768",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-CognitiveServices",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9037015685118002403",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-DLAnalytics",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "5388431510818833450",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-DataLakeStore",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12851633814069967212",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-EventHub",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17033350755666921676",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-iotHub",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12272375686672448990",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-TimeSeriesInsights",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "13417528997099779185",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-LogicAppsWF",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1494939220948470637",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-RecoveryVault",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "8410093102049392120",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SearchServices",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "11214781455545123740",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ServiceBus",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1734066521649041108",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SQLDBs",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "3443796138956176717",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SQLElasticPools",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "16114465841139910120",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-APIMgmt",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "543413114792810293",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ApplicationGateway",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "7782868737722294651",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Batch",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1290542047824257474",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-MySQL",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "4076062041206347907",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-PostgreSQL",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "7137107249598332223",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-LogicAppsISE",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14580626623399064773",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-MlWorkspace",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            }
+          ]
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/Lilac/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+        "ResourceName": "Deploy-Diag-LogAnalytics",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "SubscriptionId": null
+      }
+    }
+  }
+}
