@@ -9,8 +9,8 @@
         "Name": "282cabd4-d99c-4d6f-9147-7686c926ea31",
         "TenantId": "282cabd4-d99c-4d6f-9147-7686c926ea31",
         "DisplayName": "Root Management Group",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-16T08:46:08.0158387Z",
+        "UpdatedBy": "a85d4d6b-dd1a-4587-9e4c-73cd42708431",
         "ParentId": null,
         "ParentName": null,
         "ParentDisplayName": null,
@@ -20,80 +20,7 @@
             "Id": "/providers/Microsoft.Management/managementGroups/Lilac",
             "Name": "Lilac",
             "DisplayName": "Lilac",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/Lilac-platform",
-                "Name": "Lilac-platform",
-                "DisplayName": "Lilac-platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/Lilac-identity",
-                    "Name": "Lilac-identity",
-                    "DisplayName": "Lilac-identity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/Lilac-connectivity",
-                    "Name": "Lilac-connectivity",
-                    "DisplayName": "Lilac-connectivity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/Lilac-management",
-                    "Name": "Lilac-management",
-                    "DisplayName": "Lilac-management",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/Lilac-sandboxes",
-                "Name": "Lilac-sandboxes",
-                "DisplayName": "Lilac-sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/Lilac-landingzones",
-                "Name": "Lilac-landingzones",
-                "DisplayName": "Lilac-landingzones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/Lilac-online",
-                    "Name": "Lilac-online",
-                    "DisplayName": "Lilac-online",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/Lilac-corp",
-                    "Name": "Lilac-corp",
-                    "DisplayName": "Lilac-corp",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/Lilac-decommissioned",
-                "Name": "Lilac-decommissioned",
-                "DisplayName": "Lilac-decommissioned",
-                "Children": null
-              },
-              {
-                "Type": "/subscriptions",
-                "Id": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86",
-                "Name": "1e567987-6879-4552-911b-1e4986148c86",
-                "DisplayName": "Visual Studio Enterprise",
-                "Children": null
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/subscriptions",
@@ -102,14 +29,7 @@
             "DisplayName": "Visual Studio Ultimate with MSDN",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }

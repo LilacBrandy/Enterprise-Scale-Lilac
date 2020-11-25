@@ -9,19 +9,12 @@
         "Name": "Lilac-sandboxes",
         "TenantId": "282cabd4-d99c-4d6f-9147-7686c926ea31",
         "DisplayName": "Lilac-sandboxes",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-16T08:56:13.9928198Z",
+        "UpdatedBy": "a85d4d6b-dd1a-4587-9e4c-73cd42708431",
         "ParentId": "/providers/Microsoft.Management/managementGroups/Lilac",
         "ParentName": "Lilac",
         "ParentDisplayName": "Lilac",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

@@ -8,57 +8,7 @@
         "Id": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86",
         "Name": "1e567987-6879-4552-911b-1e4986148c86",
         "DisplayName": "Visual Studio Enterprise",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [
-            {
-              "Identity": null,
-              "Location": null,
-              "Name": "DataProtectionSecurityCenter",
-              "PolicyAssignmentId": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
-              "Properties": {
-                "Description": "This policy assignment was automatically created by Azure Security Center",
-                "DisplayName": "ASC DataProtection (subscription: 1e567987-6879-4552-911b-1e4986148c86)",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
-                "Scope": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86"
-              },
-              "ResourceId": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
-              "ResourceName": "DataProtectionSecurityCenter",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A1",
-                "tier": "Standard"
-              }
-            },
-            {
-              "Identity": null,
-              "Location": null,
-              "Name": "SecurityCenterBuiltIn",
-              "PolicyAssignmentId": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
-              "Properties": {
-                "Description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
-                "DisplayName": "ASC Default (subscription: 1e567987-6879-4552-911b-1e4986148c86)",
-                "NotScopes": null,
-                "Parameters": {},
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
-                "Scope": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86"
-              },
-              "ResourceId": "/subscriptions/1e567987-6879-4552-911b-1e4986148c86/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
-              "ResourceName": "SecurityCenterBuiltIn",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A1",
-                "tier": "Standard"
-              }
-            }
-          ],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }
